@@ -22,11 +22,11 @@ services:
   proxy:
     image: unleashorg/unleash-proxy:v0.10.4
     ports:
-      - "3000:3000"
+      - "4000:3000"
     environment:
       # Proxy clients must use one of these keys to connect to the
       # Proxy. To add more keys, separate them with a comma (`key1,key2`).
-      UNLEASH_PROXY_CLIENT_KEYS: "proxy-client-key"
+      UNLEASH_PROXY_CLIENT_KEYS: "+]S>qXWe&11p<b349cMkd#2d<vX08@,2)&miS#j2^>W#D_CeOc&`kx&ZaUJ|F"
       # This points the Proxy to the Unleash server API
       UNLEASH_URL: "http://web:4242/api"
       # This is the API token that the Proxy uses to communicate with
@@ -34,7 +34,7 @@ services:
       #
       # NOTE: It *must* match one of the client tokens defined in
       # `web.environment.INIT_CLIENT_API_TOKENS`
-      UNLEASH_API_TOKEN: "default:development.unleash-insecure-api-token"
+      UNLEASH_API_TOKEN: "*:development.6dea08d43a95f2e364015d4e91c0bc72413c3d06b6130a7ab208e7a8"
     depends_on:
       - web
     healthcheck:
