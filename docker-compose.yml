@@ -63,7 +63,7 @@ services:
       # SDKs. For front-end client SDKs that talk to the Proxy, use a
       # key from `proxy.environment.UNLEASH_PROXY_CLIENT_KEYS`
       # instead.
-      INIT_CLIENT_API_TOKENS: "default:development.unleash-insecure-api-token"
+      INIT_CLIENT_API_TOKENS: "*:development.6dea08d43a95f2e364015d4e91c0bc72413c3d06b6130a7ab208e7a8"
       # Changing log levels:
       # LOG_LEVEL: "debug"
     depends_on:
